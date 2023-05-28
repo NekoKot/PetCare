@@ -12,6 +12,7 @@ $(document).ready(function () {
     nextArrow: '<div class="next"></div>',
   });
 });
+
 //Open mobile-menu
 $(function () {
   $(".header__burger").click(function () {
