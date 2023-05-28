@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare</title>
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="./scss/style.css">
+</head>
+<header>
+  <a class="header__logo" href="/"><img src="./img/logo.svg" alt=""></a>
+  <nav class="header__nav">
+    <ul class="header__nav-list">
+      <li class="header__nav-item"><a class="header__nav-link" href="/">Новости</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="/">О нас</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="/">Блог</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="/">Услуги</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="/">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="header__social">
+    <a href="/"><img src="./img/insta.svg" alt="Instagram of PetCare"></a>
+    <a href="/"><img src="./img/telegram.svg" alt="Telegram of PetCare"></a>
+    <a href="/"><img src="./img/vk.svg" alt="VK of PetCare"></a>
+  </div>
+</header>
+<main>
+  <div class="header__burger">
+    <span></span>
+  </div>
+
+  <div class="mobile__menu-container">
+    <div class="mobile-menu__list">
+      <ul>
+        <li class="mobile-menu__link"><a href="">Новости</a></li>
+        <li class="mobile-menu__link"><a href="/">О нас</a></li>
+        <li class="mobile-menu__link"><a href="">Блог</a></li>
+        <li class="mobile-menu__link"><a href="/">Отзывы</a></li>
+        <li class="mobile-menu__link"><a href="/">Услуги</a></li>
+        <li class="mobile-menu__link"><a href="/">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slider single-item">
+    <div class="slider__item-first">
+      <div class="slider__container-first">
+        <h1 class="slider__container-first-title">Мы заботимся
+          о&nbsp;ваших питомцах</h1>
+        <p class="slider__container-first-description">Записывайтесь в ветклиники
+          и&nbsp;консультируйтесь с ветеринарным врачом онлайн</p>
+        <a href="#footer" class="slider__container-first-button">Связаться с нами</a>
+      </div>
+      <img src="./img/big_cat.png" alt="">
+    </div>
+
+    <div class="slider__item-second">
+      <div class="slider__container-second">
+        <h2 class="slider__container-second-title">Закажите план заботы</h2>
+        <p class="slider__container-second-description">Регулярная доставка специально подобранного корма и других
+          товаров
+          для
+          кошек и собак</p>
+        <p class="slider__container-second-price">от 1299 ₽/мес</p>
+        <button class="slider__container-second-button">Подобрать план</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup__wrapper">
+    <form class="popup" method="post" action="/" name="popup-form" autocomplete="off">
+      <img src="./img/cross.svg" class="popup__cross" alt="Cross">
+      <h3 class="popup__title">Чтобы подобрать план,
+        необходимо&nbsp;заполнить форму ниже</h3>
+      <div class="form__container">
+        <div class="form__checkbox">
+          <p>У меня:</p>
+          <fieldset class="form__checkbox-item">
+            <input class="form__checkbox-input" type="radio" id="cat">
+            <label class="form__checkbox-label" for="cat">Кошка</label>
+            <input class="form__checkbox-input" type="radio" id="dog">
+            <label class="form__checkbox-label" for="dog">Собака</label>
+          </fieldset>
+        </div>
+        <fieldset class="form__main">
+          <input class="form__main-input" name="form__main-name" type="text" placeholder="Имя питомца">
+          <input class="form__main-input" name="form__main-breed" type="text" placeholder="Порода питомца*" required>
+          <input class="form__main-input" name="form__main-age" type="number" placeholder="Возраст питомца*" required>
+          <input class="form__main-input" name="form__main-phone" type="tel" placeholder="Ваш номер телефона">
+          <input class="form__main-input" name="form__main-email" type="email" placeholder="Ваш email*" required>
+        </fieldset>
+        <button class="form__btn" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="cards">
+    <div class="cards__item cards__item-dog">
+      <a href=""></a>
+      <div class="cards__item-container">
+        <h2 class="card__title">Сколько стоит онлайн&#8209;консультация
+          с терапевтом? </h2>
+        <div class="cards__item-arrow">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="card__consultation">
+        <h3 class="card__consultation-title">Онлайн-консультация
+          с терапевтом</h3>
+        <p class="card__consultation-price">от 399 ₽</p>
+        <div class="card__consultation-item">
+          <img src="./img/consultation-img.svg" alt="">
+          <p>Аудио, видео или чат</p>
+        </div>
+        <div class="card__consultation-item">
+          <img src="./img/consultation-img.svg" alt="">
+          <p>Продолжительность до 60 минут</p>
+        </div>
+        <div class="card__consultation-item">
+          <img src="./img/consultation-img.svg" alt="">
+          <p>Подробный отчет после консультации: что сделать сейчас, чтобы стало лучше</p>
+        </div>
+        <button class="card__consultation-btn">Начать консультацию</button>
+      </div>
+    </div>
+
+    <div class="cards__item cards__item-cat">
+      <div class="cards__item-container">
+        <a href="/" class="card__title">Самые болезненные породы кошек: топ-5</a>
+        <p class="card__description">Среди кошачьих пород есть несколько, отличающихся слабым здоровьем.</p>
+      </div>
+      <div class="card__footer">
+        <a href="/" class="card__footer-name">Все статьи о кошках</a>
+      </div>
+    </div>
+
+  </section>
+  <footer id="footer">
+    <div class="footer__contacts">
+      <a href="tel:+78009998877">8 (800) 999-88-77</a>
+      <a href="mailto:info@petcare.com">info@petcare.com</a>
+    </div>
+    <p class="footer__copyright">©2021 PetCare. Все права защищены</p>
+    <a class="footer__logo" href="/"><img src="./img/logo.svg" alt=""></a>
+  </footer>
+
+</main>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
