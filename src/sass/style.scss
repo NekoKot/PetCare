@@ -181,8 +181,6 @@ ul {
 
 h1,
 h2,
-h3,
-h4,
 p,
 tr,
 td,
@@ -233,6 +231,17 @@ header {
 
 .header__nav-item:not(:last-of-type) {
     margin-right: rem(40);
+}
+
+.soc-link,
+.soc-ic {
+    width: 40px;
+    height: 40px;
+    fill: #726DA8;
+
+    &:hover {
+        fill: #BEE7E8;
+    }
 }
 
 .header__nav-link {
