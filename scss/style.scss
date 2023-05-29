@@ -156,7 +156,6 @@ button {
     cursor: pointer;
     padding: 0;
     border: none;
-    outline: 0;
 }
 
 svg {
@@ -660,6 +659,7 @@ header {
 
 .slider__item-second {
     background-image: url(../img/big-dog.jpg);
+    background-repeat: no-repeat;
     background-size: inherit;
     background-position: 0 55%;
 }
@@ -955,7 +955,6 @@ header {
     pointer-events: none;
 }
 
-
 @-webkit-keyframes anim {
     0% {
         opacity: 0;
@@ -1049,8 +1048,6 @@ header {
     }
 }
 
-
-
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1106,7 +1103,6 @@ footer {
     color: #394573;
     text-align: center;
 }
-
 
 // popup
 
@@ -1250,7 +1246,6 @@ footer {
     transform: translateY(-0.075em);
 
     display: -ms-grid;
-
     display: grid;
     place-content: center;
 }
@@ -1281,16 +1276,10 @@ footer {
     outline: none;
 }
 
-
 .form__main-input::-webkit-outer-spin-button,
 .form__main-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-.form__main-input,
-.form__main-input {
-    -moz-appearance: textfield;
 }
 
 .form__main {
@@ -1302,46 +1291,14 @@ footer {
     border: none;
     border-bottom: rem(1) solid #394573;
     padding: rem(9) 0;
-}
-
-.form__main-input::-webkit-input-placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: rem(18);
-    line-height: rem(22);
-    color: #394573;
-}
-
-.form__main-input::-moz-placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: rem(18);
-    line-height: rem(22);
-    color: #394573;
-}
-
-.form__main-input:-ms-input-placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: rem(18);
-    line-height: rem(22);
-    color: #394573;
-}
-
-.form__main-input::-ms-input-placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: rem(18);
-    line-height: rem(22);
-    color: #394573;
+    -moz-appearance: textfield;
 }
 
 .form__main-input,
-.form__main-input::placeholder {
+.form__main-input::placeholder,
+.form__main-input::-webkit-input-placeholder,
+.form__main-input::-moz-placeholder,
+.form__main-input:-ms-input-placeholder {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1373,6 +1330,13 @@ footer {
         background-color: #2b3559;
     }
 }
+
+@media (min-width: 2000px) {
+    .slider__container-second {
+        width: 35%;
+    }
+}
+
 
 @media(max-width: 1600px) {
     .slider__item-second {
