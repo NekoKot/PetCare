@@ -1294,9 +1294,16 @@ footer {
     border-bottom: rem(1) solid #394573;
     padding: rem(9) 0;
     -moz-appearance: textfield;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: rem(22);
+    color: #394573;
 }
 
-.form__main-input,
+
 .form__main-input::placeholder,
 .form__main-input::-webkit-input-placeholder,
 .form__main-input::-moz-placeholder,
