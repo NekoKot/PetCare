@@ -158,18 +158,10 @@ button {
     border: none;
 }
 
-svg {
-    fill: currentColor;
-}
-
 a svg,
 button svg {
     pointer-events: none;
     cursor: pointer;
-}
-
-svg:not(:root) {
-    overflow: hidden;
 }
 
 ol,
@@ -233,17 +225,6 @@ header {
     margin-right: rem(40);
 }
 
-.soc-link,
-.soc-ic {
-    width: 40px;
-    height: 40px;
-    fill: #726DA8;
-
-    &:hover {
-        fill: #BEE7E8;
-    }
-}
-
 .header__nav-link {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -281,12 +262,24 @@ header {
     width: 100%;
 }
 
+.header__social {
+    display: flex;
+    align-items: center;
+}
+.header__social a {
+    width: 40px;
+    max-width: 100%;
+    height: 40px;
+    fill: #726DA8;
+    &:hover svg  {
+        fill: #A0D2DB;
+    }
+
+}
+
 .header__social a:not(:last-of-type) {
     margin-right: rem(28);
 }
-
-/////////////////////////////////////////////////////
-
 
 .header__burger {
     width: rem(32);
